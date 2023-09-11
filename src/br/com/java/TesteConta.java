@@ -7,25 +7,28 @@ public class TesteConta {
 		Conta contaPoupanca = new Conta();
 		Conta contaInvestimento = new Conta();
 		
-		contaCorrente.numero = 11;
-		contaCorrente.saldo = 32000.18;
-		contaCorrente.cliente.nome = "Joao Felipe";
-		contaCorrente.cliente.idade = 34;
+		contaCorrente.setNumero(11);
+		contaCorrente.setNome("Joao Felipe CC");
+		contaCorrente.setIdade(34);
+		contaCorrente.setAgencia(1111);
+		contaCorrente.depositar(250);
 		
-		contaPoupanca.numero = 22;
-		contaPoupanca.saldo = 16800.74;
-		contaCorrente.cliente.nome = "Joao Felipe";
-		contaCorrente.cliente.idade = 34;
-				
-		contaInvestimento.numero = 33;
-		contaInvestimento.saldo = 625000.92;
-		contaCorrente.cliente.nome = "Joao Felipe";
-		contaCorrente.cliente.idade = 34;
+		contaPoupanca.setNumero(22);
+		contaPoupanca.setNome("Joao Felipe CP");
+		contaPoupanca.setIdade(34);
+		contaPoupanca.setAgencia(1221);
+		contaPoupanca.depositar(500);
 		
-		System.out.println("Nome:" + contaCorrente.cliente.nome);
-		System.out.println("Idade:" + contaCorrente.cliente.idade);
-		System.out.println("Conta:" + contaCorrente.numero);
-		System.out.println("Saldo:" + contaCorrente.saldo);
+		contaInvestimento.setNumero(33);
+		contaInvestimento.setNome("Joao Felipe CI");
+		contaInvestimento.setIdade(34);
+		contaInvestimento.setAgencia(1331);
+		contaInvestimento.depositar(800);
+		
+		System.out.println("Nome: " + contaCorrente.getNome());
+		System.out.println("Idade: " + contaCorrente.getIdade());
+		System.out.println("Conta: " + contaCorrente.getNumero());
+		System.out.println("Saldo: " + contaCorrente.getSaldo());
 		
 	}
 
