@@ -3,9 +3,9 @@ package br.com.java;
 public class TesteConta {
 	
 	public static void main(String[] args) {
-		Conta contaCorrente	= new Conta();
-		Conta contaPoupanca = new Conta();
-		Conta contaInvestimento = new Conta();
+		Main contaCorrente	= new Main();
+		Main contaPoupanca = new Main();
+		Main contaInvestimento = new Main();
 		
 		contaCorrente.setNumero(11);
 		contaCorrente.setNome("Joao Felipe CC");
